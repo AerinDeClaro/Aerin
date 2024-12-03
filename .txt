@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #E7DDFF; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #5A2E91; 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+            position: relative; 
+        }
+
+        h1 {
+            font-size: 3em; 
+            font-family: 'Pacifico', cursive;
+            margin: 0; 
+        } 
+
+        /* Image styles */
+        img {
+            position: absolute; 
+            bottom: -450px; 
+            left: 0px; 
+        }
+
+        .about-me {
+            background-color: #E7DDFF;
+            color: #5A2E91; 
+            text-align: left;
+            padding: 10px; 
+            margin: 20px; 
+            font-size: 2em; 
+            width: 250px; 
+            float: left; 
+        }
+
+        /* Main content container */
+        .main-content {
+            margin-left: 270px; 
+            padding: 10px; 
+        }
+
+        /* Flexbox layout for lists and form */
+        .flex-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        /* Left-aligned list */
+        .list-container {
+            width: 30%; 
+            padding-left: 20px;
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        
+        .form-container {
+            width: 40%; 
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 80%; /* Adjust width to fit the form container */
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #5A2E91; 
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="mix">CLICK</p>
+    <h1>My Portfolio</h1>
+    <p>SHS Humanities and Social Science Student - FEU ALABANG</p>
+    <p>Aerin Kasandra C. De Claro</p>
+    <img src="Portfolio Image.png" width="500" height="520" alt="Portfolio"/>
+</header>
+
+<!-- About Me Section -->
+<div class="about-me">
+    About Me!
+</div>
+
+<!-- Flex container to hold lists and center text -->
+<div class="flex-container">
+    
+    <!-- Left list (unordered) -->
+    <div class="list-container">
+        <ul>
+            <li>Full Name: Aerin Kasandra C. De Claro</li>
+            <li>Date of Birth: February 14, 2007</li>
+            <li>School: Far Eastern University - Alabang</li>
+            <li>Position: SHSCC Vice President</li>
+        </ul>
+
+        <ol>
+            <li>Class President (G8)</li>
+            <li>Consistent Honor Student</li>
+            <li>Class Vice President (G11)</li>
+            <li>Project Head (Neon City: ATAMaraw Glow Fest)</li>
+            <li>Chairman of Environmentalist Club</li>
+            <li>Conducted a Seminar</li>
+        </ol>
+    </div>
+
+    <!-- Center Form -->
+    <div class="form-container">
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="submit" value="Cancel">
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+<footer></footer>
+</html>
